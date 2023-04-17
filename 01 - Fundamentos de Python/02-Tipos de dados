@@ -1,0 +1,16 @@
+Texto -> str
+    str(caracter): "Python", 'Python', """Python""", "p"
+    -- SEMPRE ENTRE ASPAS --
+
+Numérico -> int, float, complex
+    int(inteiros): 1, 10, 100, -1, -10, -100 ... 9900182 ...
+    float(real): 1.5, -10.543, 0.76 ... 9213123.003 ...
+
+
+Sequência -> list, tuple, range
+Map -> dict
+Coleção -> set, fronzenset
+Booleano -> bool
+    bool: True e False
+
+Binário -> bytes, bytearray, memoryview
