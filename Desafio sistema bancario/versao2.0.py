@@ -168,5 +168,3 @@ while True:
 
     if escolha_usuario == '0':
         break
-
-print(usuarios)
