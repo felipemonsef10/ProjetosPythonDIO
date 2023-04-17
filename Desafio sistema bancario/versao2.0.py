@@ -3,8 +3,8 @@ cpfs_usuario = dict()
 dados_usuarios = dict()
 endereco = dict()
 saldo = 0
-saque = 0
 deposito = 0
+saque = 0
 limite_saque_diario = 0
 numero_limite_saques = 3
 extrato = ''
@@ -121,7 +121,7 @@ def sacar(valor_saque, saldo_disponivel, qtd_saque_limite, limite_saque=1500):
         saldo -= valor_saque
         limite_saque_diario += valor_saque
         numero_limite_saques -= 1
-        return valor_saque
+        print('SAQUE EFETUADDO COM SEUCESSO!')
 
 
 linha()
@@ -147,10 +147,10 @@ while True:
 
     if escolha_usuario == '2':
         linha()
-        saque += sacar(float(input('Valor de saque: R$')), saldo, numero_limite_saques)
+        sacar(float(input('Valor de saque: R$')), saldo, numero_limite_saques)
 
     if escolha_usuario == '3':
-        exibir_extrato(saque, deposito)
+        exibir_extrato(limite_saque_diario, deposito)
         saque = 0
         deposito = 0
 
