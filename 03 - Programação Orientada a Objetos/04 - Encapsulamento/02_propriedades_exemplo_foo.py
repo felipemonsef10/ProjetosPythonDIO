@@ -12,14 +12,13 @@ class Foo:
 
     @x.deleter
     def x(self):
-        self._x = -1
+        self._x = 0
         # del self._x
 
 
 foo = Foo(10)
 print(foo.x)
-foo.x = 10
-print(foo.x)
 del foo.x
-
+print(foo.x)
+foo.x = 10
 print(foo.x)
