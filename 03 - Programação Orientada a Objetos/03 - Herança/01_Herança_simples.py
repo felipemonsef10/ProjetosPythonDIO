@@ -8,7 +8,15 @@ class Veiculo():
         print('Ligando motor')
 
     def __str__(self):
-        return f'{self.__class__.__name__}: {", ".join([f"{key}={value}" for key, value in self.__dict__.items()])}'
+        return f'{self.__class__.__name__}: ' \
+               f'{", ".join([f"{key}={value}" for key, value in self.__dict__.items()])}'
+
+    # def teste(self):
+    #     cont = 1
+    #     print(f'{self.__class__.__name__}:', end=' ')
+    #     for k, v in self.__dict__.items():
+    #         print(f'{k}={v}{"," if len(self.__dict__) != cont else ""}', end=' ')
+    #         cont += 1
 
 
 class Motocicleta(Veiculo):
