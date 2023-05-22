@@ -74,8 +74,8 @@ def fazer_deposito(cpf, valor_deposito):
             if cpf == conta.cpf:
                 conta.depositar(valor_deposito)
 
-    for conta in contas:
-        print(f'{conta.cpf}: {conta.contas}, {conta.saldo}')
+    # for conta in contas:
+    #     print(f'{conta.cpf}: {conta.contas}, {conta.saldo}')
 
 
 def fazer_saque(cpf, valor_saque):
